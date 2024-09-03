@@ -1,0 +1,27 @@
+
+\RequirePackage[orthodox]{nag}
+\documentclass[11pt]{article}
+
+%% Define the include path
+\makeatletter
+\providecommand*{\input@path}{}
+\g@addto@macro\input@path{{include/}{../include/}}
+\makeatother
+
+\usepackage{include/akazachk}
+
+\title{Convex Optimization Homework Solutions}
+\author{Andres Espinosa}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+
+\include{hw1/hw1-espinosa}
+
+
+
+
+\end{document}
