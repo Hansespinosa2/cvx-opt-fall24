@@ -11,12 +11,87 @@ Where each $\mu_n = \frac{\theta_n}{1-\theta_1}$
   \sum_i \mu_i = \frac{\sum_i \theta_i}{1-\theta_1} = \frac{1-\theta_1}{1-\theta_1} = 1
 \end{equation}
 \subsection{Exercise 2.2}
-
+The intersection between any two convex sets is convex. A line segment by definition is convex because it contains itself. Therefore, if there is any line segment $L$ that intersects $C$, for $C$ to be convex, the intersection must also be convex.
+\\ \\ 
+Similarly, for an affine set, the definition is that the set must contain hte line through any distinct points in the set. Therefore if there is a line that line segment $L$ that intersects an affine set $A$, its intersection is also affine.
 \subsection{Exercise 2.5}
-
+Distance between two parallel hyperplanes $\{x \in \mathbb{R}^n | a^T x = b_1 \}, \{x \in \mathbb{R}^n | a^T x = b_2\}$:
+\begin{gather}
+  a^T(x_1+ at) = b_2 \\
+  a^Tx_1 + a^Tat = b_2 \\
+  t = \frac{b_2-a^Tx_1}{a^Ta} \\
+  t = \frac{b_2 - b_1}{a^Ta} \\
+  \frac{|b_1 - b_2|}{||a||_2}
+\end{gather}
 \subsection{Exercise 2.7}
-
+The image below illustrates the intuition behind this in $\mathbb{R}^2$. The set of all points that are closer to a than b $\{x | ||x-a||_2 \leq ||x-b||_2\}$, is a halfspace of the form 
+\begin{equation}
+  \{x| c^T x \leq d \}
+\end{equation} where $c$ is the normal vector that points from $a$ to $b$, $ c = \frac{a-b}{||a-b||_2}$ and $d = (\frac{a-b}{||a-b||_2})^T \frac{a+b}{2}$
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=0.75\textwidth]{hw1/images/voronoi_halfspace.png}}
+\end{figure}
 \subsection{Exercise 2.8}
+Finding which of the sets are polyhedra
+\subsubsection{a}
+S = $\{y_1 a_1 + y_2 a_2 | -1 \leq y_1 \leq 1, -1 \leq y_2 \leq 1 \}, a_1, a_2 \in \mathbb{R}^n$
+This set is a 2D parallelogram in any $\mathbb{R}^n$. The image shown is one that is generated with $\mathbb{R}^3$ coordinates $a_1 = (1,2,3) \text{ and } a_2 = (4,5,2)$. It can be defined as the intersection between four halfspaces with their normals pointing from the origin to and centered on $a_1, a_2, -a_1, -a_2$.
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=0.5\textwidth]{hw1/images/polyhedra_a.png}}
+\end{figure}
+\\ \\ 
+The normal vectors for the halfspaces are: 
+\begin{align}
+  A = 
+  \begin{bmatrix}
+     \frac{a_1}{||a_1||_2} \\
+     \frac{a_2}{||a_2||_2} \\ 
+     \frac{-a_1}{||a_1||_2} \\
+     \frac{-a_2}{||a_2||_2}
+  \end{bmatrix}
+\end{align}
+
+and the b vector is:
+\begin{align}
+  b = 
+  \begin{bmatrix}
+    ||a_1||_2 \\
+    ||a_2||_2 \\ 
+    ||a_1||_2 \\
+    ||a_2||_2
+  \end{bmatrix}
+\end{align}
+
+Therefore, the set S can be expressed as $S = \{x | Ax \preceq b\}$ 
+
+\subsubsection{b}
+This is a polyhedra where:
+\begin{gather}
+  A = I^n \\
+  b = 0
+\end{gather}
+\begin{align}
+  C = 
+  \begin{bmatrix}
+     \mathbf{1} \\
+     a \\
+     a^2
+  \end{bmatrix}
+\end{align}
+
+\begin{align}
+  d = 
+  \begin{bmatrix}
+    1 \\ 
+    b_1 \\
+    b_2    
+  \end{bmatrix}
+\end{align}
+
+\subsubsection{c}
+Not attempted
+\subsubsection{d}
+Not attempted
 
 \subsection{Exercise 2.11}
 
