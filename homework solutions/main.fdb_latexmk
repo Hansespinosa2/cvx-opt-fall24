@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1725578743.41768 "main.bcf" "main.bbl" "main" 1725579360.78882 0
-  "main.bcf" 1725579359 107996 2ad4cfcf6ccb2017344ad685711f308a "pdflatex"
+["biber main"] 1725601876.54456 "main.bcf" "main.bbl" "main" 1726080278.80628 0
+  "main.bcf" 1726080278 107996 2ad4cfcf6ccb2017344ad685711f308a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1725579355.33085 "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" "main.pdf" "main" 1725579360.7906 0
+["pdflatex"] 1726080274.79952 "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" "main.pdf" "main" 1726080278.80809 0
   "C:/Users/hanse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1724864967 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/hanse/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714548301 24236046 ce77420a77f69bee6c86dfdb9885faf7 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -25,6 +25,8 @@
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx10.tfm" 1256929440 12076 b54175e02101bea1addf6b2d0197ed12 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx12.tfm" 1256929440 12088 d750ac78274fa7c9f73ba09914c04f8a ""
+  "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx6.tfm" 1256929440 12060 e1421116ee46f156304f311f9d8331aa ""
+  "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx8.tfm" 1256929440 12076 360d279d01701e9e9f0f2427c1d230fe ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr10.tfm" 1256929440 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr12.tfm" 1256929440 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr17.tfm" 1256929440 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
@@ -37,6 +39,9 @@
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/lmsy10.tfm" 1256929440 1308 02cc510f9dd6012e5815d0c0ffbf6869 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/lmsy6.tfm" 1256929440 1300 b0605d44c16c22d99dc001808e4f24ea ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/lmsy8.tfm" 1256929440 1304 cdc9a17df9ef0d2dc320eff37bbab1c4 ""
+  "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmbx10.tfm" 1256929440 11880 35fcf136a2198418dfc53c83e9e2a07f ""
+  "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmbx6.tfm" 1256929440 11852 eda7061aa4cc8552ba736dae866e4460 ""
+  "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmbx8.tfm" 1256929440 11868 731e03b24d399279cf9609d002110394 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr10.tfm" 1256929440 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr12.tfm" 1256929440 11888 6841b91e46b65cf41a49b160e6e74130 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr6.tfm" 1256929440 11836 e3b6ce3e601aec94f64a536e7f4224d5 ""
@@ -284,17 +289,17 @@
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
   "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" 1725389023 424 e8ff71d7cce7cd34f8ea1aa6397dfe07 ""
-  "hw1/hw1-espinosa.aux" 1725579359 5890 1f321a7c71da0172733eaf1313373709 "pdflatex"
-  "hw1/hw1-espinosa.tex" 1725579353 3290 b136625ddce4504c0a075abdb0b5dbad ""
+  "hw1/hw1-espinosa.aux" 1726080278 7190 f5c1a20010a26435cca4f3e84a47f290 "pdflatex"
+  "hw1/hw1-espinosa.tex" 1726080273 5615 acfbc3aef998ace3e7929376e5a05b15 ""
   "hw1/images/polyhedra_a.png" 1725576680 64456 75b950b78d05ff2de263f86ce4316ea6 ""
   "hw1/images/voronoi_halfspace.png" 1725553543 4976 02d3bd9e63ed1547618f158d7603e853 ""
   "include/akazachk.sty" 1724864945 19452 3aa7263e155354132100919494cb3812 ""
-  "main.aux" 1725579359 380 18aead852ec9988f8e6e75632a67a062 "pdflatex"
-  "main.bbl" 1725578747 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1725579359 1217 c1303c5da217332d211a492b42806341 "pdflatex"
-  "main.run.xml" 1725579359 2258 a91c127ad539d8c56e10e28939cf8079 "pdflatex"
+  "main.aux" 1726080278 380 ec305bffbaf62132539f8beff20390ad "pdflatex"
+  "main.bbl" 1725601881 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
+  "main.out" 1726080278 2589 ec1326068fc3bf05e7143d1274c3de1a "pdflatex"
+  "main.run.xml" 1726080278 2258 a91c127ad539d8c56e10e28939cf8079 "pdflatex"
   "main.tex" 1725389023 424 e8ff71d7cce7cd34f8ea1aa6397dfe07 ""
-  "main.toc" 1725579359 847 1d07ce4ca63bafa84eca988dc2028d30 "pdflatex"
+  "main.toc" 1726080278 1737 f1353a6b14c3b3dcf03d6bdd3e76b8f7 "pdflatex"
   (generated)
   "hw1/hw1-espinosa.aux"
   "main.aux"

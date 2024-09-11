@@ -94,8 +94,38 @@ Not attempted
 Not attempted
 
 \subsection{Exercise 2.11}
-
+Showing that the hyperbolic set $\{x \in \mathbb{R}^2_{++} | x_1 x_2 \geq 1\}$ is convex. As a generalization, show that $\{x \in \mathbb{R}^2_{+} | \Pi_{i=1}^n x_i \geq 1\}$
 \subsection{Exercise 2.12}
+Finding which of the following sets are convex:
+\subsubsection{a. slab}
+A set of the form $\{x \in \mathbb{R}^n | \alpha \leq a^T x \leq \beta\}$,
+A slab is the intersection of two halfspaces $\mathbb{C}$ and $\mathbb{D}$ 
+where $\mathbb{C} = \{x| a^T x \leq \beta\}$ and $\mathbb{D} = \{x| -a^T x \leq -\alpha\}$  
+
+\subsubsection{b. rectangle}
+A set of the form $\{ x \in \mathbb{R}^n | \alpha_i \leq x_i \leq \beta_i, i = 1,\dots, n\}$.
+This is also the intersection of halfspaces, but this time it is the intersection of four halfspaces (in $\mathbb{R}^2$). But this is a polyhedra.
+
+\subsubsection{c. wedge}
+A set of the form $\{x \in \mathbb{R}^n | a_1^T x \leq b_1, a_2^T x \leq b_2\}$.
+Intersection of two halfspaces 
+
+\subsubsection{d. point-set distance}
+A set of the form $\{ x |  \| x-x_0 \|_2 \leq \| x-y \|_2 \forall y \in S\}$ where $S \subseteq \mathbb{R}^n$. 
+This can be viewed as the intersection of many euclidean balls. The intersection of convex spaces is convex so the here, the set can be turned into $\cap_{y \in S} \{ x |  \| x-x_0 \|_2 \leq \| x-y \|_2\}$
+\subsubsection{e. set-set distance}
+A set of the form $\{ x | \textbf{dist}(x,S) \leq  \textbf{dist}(x,T) \}$
+This set is not convex. Consider two crescent-moon shaped sets that lie next to each other so the tip of one moon is in the center of the other moon. The set that is closer to either of them is not convex because the crescent shape would stay in the set and is not convex.
+
+\subsubsection{f. affine set combo}
+A set of the form $\{ x | x + S_2 \subseteq S_1 \}$, where $S_1, S_2 \subseteq \mathbb{R}^n$
+Yes, this is essentially the section of $S_2$ that can be translated to the convex $S_1$
+
+\subsubsection{g. fraction distance}
+Not attempted
+
 
 \subsection{Exercise 2.15}
-
+Finding which conditions sets are convex that are conditions on the probability simplex $\{ p | \textbf{1}^T p = 1, p  \succeq 0 \}$:
+\subsubsection{a. bounded expectation}
+This is a linear bound on the 
