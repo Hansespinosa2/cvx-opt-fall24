@@ -19,3 +19,4 @@
 \contentsline {subsubsection}{\numberline {1.7.7}g. fraction distance}{5}{subsubsection.1.7.7}%
 \contentsline {subsection}{\numberline {1.8}Exercise 2.15}{5}{subsection.1.8}%
 \contentsline {subsubsection}{\numberline {1.8.1}a. bounded expectation}{5}{subsubsection.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.8.2}b. prob a and b}{5}{subsubsection.1.8.2}%

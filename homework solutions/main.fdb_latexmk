@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1725601876.54456 "main.bcf" "main.bbl" "main" 1726080278.80628 0
-  "main.bcf" 1726080278 107996 2ad4cfcf6ccb2017344ad685711f308a "pdflatex"
+["biber main"] 1725601876.54456 "main.bcf" "main.bbl" "main" 1726157608.26306 0
+  "main.bcf" 1726157607 107996 2ad4cfcf6ccb2017344ad685711f308a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1726080274.79952 "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" "main.pdf" "main" 1726080278.80809 0
+["pdflatex"] 1726157604.09161 "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" "main.pdf" "main" 1726157608.26475 0
   "C:/Users/hanse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1724864967 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/hanse/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714548301 24236046 ce77420a77f69bee6c86dfdb9885faf7 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -289,17 +289,17 @@
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
   "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" 1725389023 424 e8ff71d7cce7cd34f8ea1aa6397dfe07 ""
-  "hw1/hw1-espinosa.aux" 1726080278 7190 f5c1a20010a26435cca4f3e84a47f290 "pdflatex"
-  "hw1/hw1-espinosa.tex" 1726080273 5615 acfbc3aef998ace3e7929376e5a05b15 ""
+  "hw1/hw1-espinosa.aux" 1726157607 7322 14b2ffd993367d9096fe2850aedd67e4 "pdflatex"
+  "hw1/hw1-espinosa.tex" 1726157602 5683 1099af52aacd7901c3cbbbce960dc153 ""
   "hw1/images/polyhedra_a.png" 1725576680 64456 75b950b78d05ff2de263f86ce4316ea6 ""
   "hw1/images/voronoi_halfspace.png" 1725553543 4976 02d3bd9e63ed1547618f158d7603e853 ""
   "include/akazachk.sty" 1724864945 19452 3aa7263e155354132100919494cb3812 ""
-  "main.aux" 1726080278 380 ec305bffbaf62132539f8beff20390ad "pdflatex"
+  "main.aux" 1726157607 380 ec305bffbaf62132539f8beff20390ad "pdflatex"
   "main.bbl" 1725601881 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1726080278 2589 ec1326068fc3bf05e7143d1274c3de1a "pdflatex"
-  "main.run.xml" 1726080278 2258 a91c127ad539d8c56e10e28939cf8079 "pdflatex"
+  "main.out" 1726157607 2744 073499c65e92d8ed95ef07bf5eeb619e "pdflatex"
+  "main.run.xml" 1726157607 2258 a91c127ad539d8c56e10e28939cf8079 "pdflatex"
   "main.tex" 1725389023 424 e8ff71d7cce7cd34f8ea1aa6397dfe07 ""
-  "main.toc" 1726080278 1737 f1353a6b14c3b3dcf03d6bdd3e76b8f7 "pdflatex"
+  "main.toc" 1726157607 1828 979a1c189d315cafa0caca4b8b229460 "pdflatex"
   (generated)
   "hw1/hw1-espinosa.aux"
   "main.aux"
