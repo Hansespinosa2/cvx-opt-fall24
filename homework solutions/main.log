@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.1)  14 SEP 2024 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.1)  22 SEP 2024 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1417,12 +1417,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-<hw1/images/voronoi_halfspace.png, id=211, 462.528pt x 346.896pt>
+<hw1/images/voronoi_halfspace.png, id=241, 462.528pt x 346.896pt>
 File: hw1/images/voronoi_halfspace.png Graphic file (type png)
 <use hw1/images/voronoi_halfspace.png>
 Package pdftex.def Info: hw1/images/voronoi_halfspace.png  used on input line 32.
 (pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
-<hw1/images/polyhedra_a.png, id=213, 462.528pt x 346.896pt>
+<hw1/images/polyhedra_a.png, id=243, 462.528pt x 346.896pt>
 File: hw1/images/polyhedra_a.png Graphic file (type png)
 <use hw1/images/polyhedra_a.png>
 Package pdftex.def Info: hw1/images/polyhedra_a.png  used on input line 40.
@@ -1461,7 +1461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
 
 
 {C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-<hw2/images/exercise233cone.png, id=265, 462.528pt x 346.896pt>
+<hw2/images/exercise233cone.png, id=295, 462.528pt x 346.896pt>
 File: hw2/images/exercise233cone.png Graphic file (type png)
 <use hw2/images/exercise233cone.png>
 Package pdftex.def Info: hw2/images/exercise233cone.png  used on input line 63.
@@ -1476,7 +1476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--67
 
  []
 
-[8 <./hw2/images/exercise233cone.png>]) [9]
+[8 <./hw2/images/exercise233cone.png>] [9] [10]) [11]
 No complaints by nag.
 (main.aux (hw1/hw1-espinosa.aux) (hw2/hw2-espinosa.aux))
  ***********
@@ -1484,23 +1484,23 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 41B813E2E753B66FC12B0122A94B1E45;4538.
+(rerunfilecheck)             Checksum: 167A28CCCB2D7EAE1CD43D5BF134F18C;5144.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45688 strings out of 474423
- 962689 string characters out of 5741719
+ 45724 strings out of 474423
+ 963229 string characters out of 5741719
  1950496 words of memory out of 5000000
- 67214 multiletter control sequences out of 15000+600000
+ 67220 multiletter control sequences out of 15000+600000
  618657 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,107p,1219b,982s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,107p,1219b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (9 pages, 343994 bytes).
+Output written on main.pdf (11 pages, 362761 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -83,14 +83,118 @@ These conditions are all satisfied when $y_n \geq y_{n-1} \geq \dots \geq y_2 \g
   K^* = \{ y \in \mathbb{R}^n | y_n \geq y_{n-1} \geq \dots \geq y_2 \geq y_1 \geq 0\}
 \end{equation}
 \subsection{Exercise 3.2}
-
+The first function is potentially quasiconvex because the sublevel sets shown are convex. The second function does not seem to have convex sublevel sets. So it is not quasiconvex or quasiconcave.
 \subsection{Exercise 3.5}
+Showing that the running average of a convex function is also convex. Since $f$ is differentiable, we can attempt to differentiate $F$ twice and evaluate it on the domain of $F$
+\begin{equation}
+  F(x) = \frac{1}{x} \int_{0}^{x} f(t)dt
+\end{equation}
 
+\begin{gather}
+  F^\prime(x) = -\frac{1}{x^2} \int_{0}^{x} f(t)dt + \frac{1}{x} \frac{d }{d x}  \int_{0}^{x} f(t)dt \\
+= -\frac{1}{x^2} \int_{0}^{x} f(t)dt + \frac{1}{x} (f(x)+ \int_{0}^{x}\frac{d }{d x} f(t)dt) \\
+F^\prime(x) = -\frac{1}{x^2} \int_{0}^{x} f(t)dt + \frac{f(x)}{x}
+\end{gather}
+
+\begin{gather}
+  F^{\prime \prime}(x) = \frac{2}{x^3} \int_{0}^{x} f(t)dt - \frac{1}{x^2} \frac{d }{d x}  \int_{0}^{x} f(t)dt + \frac{f^\prime(x)x - f(x)}{x^2} \\ 
+  F^{\prime \prime}(x) = \frac{2}{x^3} \int_{0}^{x} f(t)dt - \frac{f(x)}{x^2} + \frac{f^\prime(x)x - f(x)}{x^2} \\
+  F^{\prime \prime}(x) = \frac{2}{x^3} \int_{0}^{x} f(t)dt - \frac{2f(x)}{x^2} + \frac{f^\prime(x)x}{x^2} \\ 
+  F^{\prime \prime}(x) = \frac{2}{x^3}( \int_{0}^{x} f(t)dt - f(x)x + \frac{f^\prime(x)x^2}{2}) \\
+  = \frac{2}{x^3}( \int_{0}^{x} f(t) - f(x)  - f^\prime(x)(t-x)dt)
+\end{gather}
+The term $f(t) - f(x) - f^\prime(x)(t-x)$ is always positive because of the definition below for any convex function $f$
+\begin{equation}
+  f(t) \geq f(x) + f^\prime(x)(t-x)
+\end{equation}
+Therefore, since the domain of $F$ is confined to all positive numbers, the hessian of $F$ is always greater than zero.
 \subsection{Exercise 3.6}
+\begin{itemize}
+  \item The epigraph of a function is a halfspace if the function is affine. Since the function is linear and infinite, its epigraph is a halfspace. 
+  \item If a function is linear then its epigraph is a convex cone.
+  \item If a function is piecewise affine, then its epigraph is a polyhedron.
+\end{itemize} 
 
 \subsection{Exercise 3.15}
+\subsubsection{part a}
+Showing that for $x > 0,  u_0(x) = \lim_{\alpha \to 0} u_\alpha (x)$
+\begin{equation}
+  u_\alpha(x) = \frac{x^\alpha-1}{\alpha}
+\end{equation}
+L'hopital :)
+\begin{equation}
+  \lim \frac{x^\alpha-1}{\alpha} = \lim x^\alpha \log x
+\end{equation}
+This goes to $\log x$ as $\alpha \to 0$
+\subsubsection{Part b}
+Firstly, $u_\alpha$ is monotonically increasing because the first derivative is
+\begin{equation}
+  u_\alpha^{\prime} = x^{\alpha-1} 
+\end{equation}
+Which is always positive. The function is concave since the hessian is 
+\begin{equation}
+  u_\alpha^{\prime \prime} = (\alpha-1)x^{\alpha-2} 
+\end{equation}
+Since $0 < \alpha \leq 1$, the function is affine for $\alpha=1$ and concave for all other values of $\alpha$. The equation $u_\alpha(1) = 0 $ is also satisfied since $1^\alpha=1 \forall \alpha$  
 
 \subsection{Exercise 3.16}
+Finding whether the functions are convex, concave, quasiconcave, or quasiconvex.
+
+\subsubsection{Part b}
+  
+\begin{equation}
+  f(x_1,x_2)= x_1x_2
+\end{equation}
+\begin{align}
+  \nabla^2 f = 
+  \begin{bmatrix}
+     0 1 \\
+     1 0
+  \end{bmatrix}
+\end{align}
+In reducing to row echelon form, rows 1 and 2 would need to exchange and therefore the matrix is not positive semidefinite and not convex. It is not concave since the negative of the matrix is not positive semidefinite. It is quasiconcave but I didn't really know that.
+
+\subsubsection{Part c}
+\begin{equation}
+  f(x_1, x_2) = \frac{1}{x_1 x_2}
+\end{equation}
+
+\begin{align}
+  \nabla^2 f =
+  \begin{bmatrix}
+     \frac{2}{x_1^3 x_2} \frac{1}{x_1^2 x_2^2} \\
+     \frac{1}{x_1^2 x_2^2} \frac{2}{x_1 x_2^3}
+  \end{bmatrix}
+\end{align}
+
+This function is convex if $\frac{2}{x_1^3 x_2} \geq 0$ and $\frac{3}{x_1^4 x_2^4} \geq 0$. Since $x_1,x_2 \in \mathbb{R}_{++}^2$, the function is convex.
+
+\subsubsection{Part d}
+\begin{equation}
+  f(x_1, x_2) = \frac{x_1}{x_2}
+\end{equation}
+\begin{align}
+  \nabla^2 f =
+  \begin{bmatrix}
+     0 \frac{-1}{x^2} \\
+     \frac{-1}{x^2} \frac{2x_1}{x_2^3}
+  \end{bmatrix}
+\end{align}
+This function is not convex or concave. I still don't really get quasiconvex or quasiconcave tbh.
+
+\subsubsection{Part e}
+\begin{equation}
+  f(x_1, x_2) = \frac{x_1^2}{x_2}
+\end{equation}
+I know this is convex because I watched the lecture but here the hessian
+\begin{align}
+  \nabla^2 f = 
+  \begin{bmatrix}
+     \frac{2}{x_2} \frac{-2x_1}{x_2^2} \\
+     \frac{-2x_1}{x_2^2} \frac{2x_1^2}{x_2^3}
+  \end{bmatrix}
+\end{align}
+This function is convex when its hessian is positive semidefinite, which is satisfied when $\frac{2}{x_2} \geq 0, \frac{2x_1^2}{x_2^3} \geq 0$ and $\frac{4x_1^2}{x_2^4}   - \frac{4x_1^2}{x_2^4}  \geq 0$. These are always true and therefore $f$ is convex.
 
 \subsection{Exercise 3.18}
 
