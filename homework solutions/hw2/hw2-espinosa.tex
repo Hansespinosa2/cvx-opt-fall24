@@ -197,8 +197,19 @@ I know this is convex because I watched the lecture but here the hessian
 This function is convex when its hessian is positive semidefinite, which is satisfied when $\frac{2}{x_2} \geq 0, \frac{2x_1^2}{x_2^3} \geq 0$ and $\frac{4x_1^2}{x_2^4}   - \frac{4x_1^2}{x_2^4}  \geq 0$. These are always true and therefore $f$ is convex.
 
 \subsection{Exercise 3.18}
-
+Not attempted
 \subsection{Exercise 3.24}
-
+Finding if the below probability simplexes are convex, quasiconvex, concave, quasiconcave
+\subsubsection{quartile}
+\begin{equation}
+  \textbf{quartile}(x) = \text{inf} \{ \beta | \textbf{prob}(x\leq \beta ) \geq 0.25\}
+\end{equation}
+This function is quasiconvex and quasiconcave. It is not convex since it is not continuous
 \subsection{Exercise 3.36}
-
+Deriving conjugates of the function
+\subsubsection{Max function}
+\begin{gather}
+  f^*(y) = sup\{y^Tx - f(x)\} \\
+  f^*(y) = sup\{y^Tx - max\{x_i\}\} \\
+  \frac{d }{d x}  y^Tx - max\{x_i\} = y -
+\end{gather}

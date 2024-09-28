@@ -41,4 +41,13 @@
 \contentsline {subsubsection}{\numberline {2.7.4}Part e}{11}{subsubsection.2.7.4}%
 \contentsline {subsection}{\numberline {2.8}Exercise 3.18}{11}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Exercise 3.24}{11}{subsection.2.9}%
+\contentsline {subsubsection}{\numberline {2.9.1}quartile}{11}{subsubsection.2.9.1}%
 \contentsline {subsection}{\numberline {2.10}Exercise 3.36}{11}{subsection.2.10}%
+\contentsline {subsubsection}{\numberline {2.10.1}Max function}{12}{subsubsection.2.10.1}%
+\contentsline {section}{\numberline {3}Homework 3}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Exercise 3.42}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Exercise 3.54}{13}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Exercise 3.57}{13}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Exercise 4.4}{13}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Exercise 4.8}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Exercise 4.17}{13}{subsection.3.6}%
