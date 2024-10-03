@@ -1,10 +1,65 @@
 \section{Homework 3}
 \subsection{Exercise 3.42}
+For this problem we have to show that the below function is quasiconcave
+\begin{equation}
+  W(x) = \sup \{ T | |x_1 f_1(t) + \dots + x_n f_n(t) - f_0(t)| \leq \epsilon \text{ for } 0 \leq t \leq T \}
+\end{equation}
+To prove this, we can find if for each $\epsilon$, the function is concave. The definition of quasiconcavity is that all its superlevel sets are concave. In order to evaluate the superlevel sets, we can flip the infimum and supremum
+\begin{equation}
+  W(x) = \inf \{ T | |x_1 f_1(t) + \dots + x_n f_n(t) - f_0(t)| \geq \epsilon \text{ for } 0 \leq t \leq T \}
+\end{equation}
+This form of the equation now flips the equal sign so we can evaluate the superlevel sets with the threshold being $\epsilon$. The point-wise infimum of a set of concave functions is a concave function. So, as long as the function inside is a concave function, then this holds. The function there is a linear combination of x and therefore it is convex, and therefore quasiconcave.
 
 \subsection{Exercise 3.54}
+Verifying log concavity of the the function
+\begin{equation}
+  f(x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{x} e^\frac{-t^2}{2} dt
+\end{equation}
+\subsubsection{Part a}
+Verifying that $f^{\prime \prime} f(x) \leq f^\prime(x)^2, x \geq 0$
+\begin{gather}
+  f^\prime(x) = \frac{1}{\sqrt{2\pi}} \frac{d }{d x}  \int_{-\infty}^{x} e^\frac{-t^2}{2} dt \\
+  = \frac{1}{\sqrt{2\pi}} e^\frac{-x^2}{2}
+\end{gather}
+
+\begin{gather}
+  f^{\prime \prime}(x) = \frac{1}{\sqrt{2\pi}} \frac{d }{d x} e^\frac{-x^2}{2} \\
+  = - \frac{1}{\sqrt{2\pi}} e^\frac{-x^2}{2}x
+\end{gather}
+
+\begin{gather}
+  f^{\prime \prime}(x) f(x) \leq f^\prime(x)^2 \\
+  - \frac{1}{\sqrt{2\pi}} e^\frac{-x^2}{2}x \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{x} e^\frac{-t^2}{2}dt \leq  (\frac{1}{\sqrt{2\pi}} e^\frac{-x^2}{2})^2 \\
+  -e^\frac{-x^2}{2}x \int_{-\infty}^{x} e^\frac{-t^2}{2}dt \leq (e^\frac{-x^2}{2})^2
+\end{gather}
+If $x= 0$, the inequality $0 \leq 1$ holds. If $x > 0$, the left hand side of the inequality will always be negative and the right hand side will be greater than 1. Therefore the statement $f^{\prime \prime}(x) f(x) \leq f^\prime(x)^2, x \geq 0$ holds.
+\subsubsection{Part b}
+Verifying that for any $t$ and $x$, we have $\frac{t^2}{2} \geq \frac{-x^2}{2}+xt$
+I am not sure the most rigorous way to do this, so I will evaluate the signs of each side on every combation of zero, positive, and negative.
+\begin{itemize}
+  \item $x=0, t=0 \to 0 \geq 0$ => evidently true since zero equals zero
+  \item $x>0 \text{ or } x<0, t=0 \to 0 \geq -\frac{x^2}{2}$ => evidently true since a negative number is lower than zero
+  \item $x=0, t>0 \text{ or } t<0 \to \frac{t^2}{2}\geq 0$ => evidently true since a positive number is greater than zero
+  \item $x<0, t> 0 \to \frac{t^2}{2} \geq -\frac{x^2}{2} - |x| t$ evidently true since a positive number is greater than a negative number
+  \item $x<0, t<0 \to t^2 +x^2 \geq 2|x| |t|$ this is the arithmetic-geometric mean inequality 
+\end{itemize}
+
+\subsubsection{Part c}
+Part b can be flipped and applying log to both sides we see that $e^\frac{-t^2}{2} \leq e^{\frac{x^2}{2}-xt}$
+\begin{gather}
+  e^\frac{-t^2}{2} \leq e^{\frac{x^2}{2}-xt} \\
+  \int_{-\infty}^{x} e^\frac{-t^2}{2}dt \leq \int_{-\infty}^{x}e^{\frac{x^2}{2}-xt} dt \\ 
+  \int_{-\infty}^{x} e^\frac{-t^2}{2}dt \leq e^{\frac{x^2}{2}}\int_{-\infty}^{x}e^{-xt} dt
+\end{gather}
+
+\subsubsection{Part d}
+\begin{gather}
+  \int_{-\infty}^{x} e^\frac{-t^2}{2}dt \leq -e^\frac{-x^2}{2}x 
+\end{gather}
 
 \subsection{Exercise 3.57}
-
+Showing that the function $f(X) = X^{-1} $ is matrix convex on $\mathbb{S}_{++}^n$
+If the matrix $X$ is positive definite, then its inverse is also positive definite and therefore matrix convex.
 \subsection{Exercise 4.4}
 
 \subsection{Exercise 4.8}
