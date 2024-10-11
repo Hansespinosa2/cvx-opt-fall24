@@ -61,7 +61,91 @@ Part b can be flipped and applying log to both sides we see that $e^\frac{-t^2}{
 Showing that the function $f(X) = X^{-1} $ is matrix convex on $\mathbb{S}_{++}^n$
 If the matrix $X$ is positive definite, then its inverse is also positive definite and therefore matrix convex.
 \subsection{Exercise 4.4}
+\subsubsection{Part a}
+Proving that for any $x \in \mathbb{R}^n$ we have $\bar{x} \in \mathbb{F}$ where $\mathbb{F}$ is 
+\begin{equation}
+  F = \{ x | Q_i x = x, i = 1, ... , k \}
+\end{equation}
+Since $\bar{x} = \frac{1}{k} \sum_{i=1}^{k} Q_i x$ and the group $\mathbb{G}$ is closed under products and inverse, any multiplication of the matrices $Q_i$ and $Q_j$ will result in some other $Q_s$. Therefore, $\frac{1}{k} \sum_{s=1}^{k} Q_s x = \frac{1}{k} \sum_{i=1}^{k} Q_i x$
+\subsubsection{Part b}
+Showing that if $f : \mathbb{R}^n \to \mathbb{R}$ is convex and $\mathbb{G}$-invariant, then $f(\bar{x}) \leq f(x)$.
+\begin{gather}
+  f(\bar{x}) = f(\frac{1}{k} \sum_{i=1}^{k} Q_i x) \\
+  \text{Since f is convex} \\
+  f(\frac{1}{k} \sum_{i=1}^{k} Q_i x) \leq \frac{1}{k} \sum_{i=1}^{k} f(Q_i x) \\
+  \text{Since f is G-invariant} \\
+  f(\frac{1}{k} \sum_{i=1}^{k} Q_i x) \leq \frac{1}{k} \sum_{i=1}^{k} f(x) \\
+  f(\bar{x}) \leq f(x)
+\end{gather}
+\subsubsection{Part c}
+If every function in the optimization problem below is G-invariant, then there exists an equivalent optimization problem
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } f_0 (Q_i x) \\
+    \text{subject to } f_i(Q_i x) \leq 0, i = 1, \dots, m \\
+    Q_i x - x = 0
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Part d}
+Not attempted
 
 \subsection{Exercise 4.8}
+\subsubsection{Part a}
+\begin{gather}
+  c^T x + \lambda^T(Ax-b) \\
+  \frac{d }{d x} = c + A^T \lambda = 0 \\ 
+  x^T c + x^T A^T \lambda  - \lambda^T b \\
+  x^T (c + A^T \lambda)  - \lambda^T b 
+\end{gather}
+
+\begin{equation}
+  p^* = \lambda^T b \iff c = A^T \lambda
+\end{equation}
+Otherwise the problem is either infeasible so the the value would be $-\infty$, or the problem is unbounded and therefore $\infty$
+\subsubsection{Part b}
+\begin{gather}
+  c^T x + \lambda (a^T x - b) \\
+  c  + a \lambda = 0 \\
+  c = a \lambda 
+\end{gather}
+
+\begin{equation}
+  p^* = b \lambda \iff c = a \lambda
+\end{equation}
+
+\subsubsection{Part c}
+If $c$ is positive, then the minimization goes to the lower bound $l$, otherwise, it goes to the upperbound u if $c$ is negative. All feasible values are optimal if $c = 0$
+
+\subsubsection{Part d}
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } c^T x \\
+    \text{subject to } \textbf{1}^T x = 1 \\
+    x \succeq 0
+  \end{aligned}
+\end{equation}
+
+In this case, regardless of the sign of $c$, the optimal value will be the smallest entry $c_{min}$. This is because if all entries are positive, then the smallest entry will be maxed out by the corresponding $x_i=1$ and the rest $x_j \neq i = 0$. And if the entries are negative, then the value is still maxed out at $x_i = 1$. \\
+\subsubsection{Part e}
+Not attempted
 
 \subsection{Exercise 4.17}
+\begin{equation}
+  \begin{aligned}
+    \text{maximize } \sum_{j=1}^{n} r_j(x_j) \\
+    \text{subject to } A x \preceq c^{max} \\
+    x \succeq 0
+  \end{aligned}
+\end{equation}
+Transforming
+
+\begin{equation}
+  \begin{aligned}
+    \text{maximize } p^T x_{under} + p_{disc}^T x_{over}\\
+    \text{subject to } A x \preceq c^{max} \\
+    x_{under} -q = x_{over} \\
+    x_{under}, x_{over} \succeq 0 
+  \end{aligned}
+\end{equation}
+with variables $x_under$ and $x_over$

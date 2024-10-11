@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1726326778.14002 "main.bcf" "main.bbl" "main" 1727982036.91877 0
-  "main.bcf" 1727982035 107996 2ad4cfcf6ccb2017344ad685711f308a "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1728615039.94799 -1
+  "main.bcf" 1728615038 107996 2ad4cfcf6ccb2017344ad685711f308a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1727982032.20625 "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" "main.pdf" "main" 1727982036.92022 0
+["pdflatex"] 1728615032.40391 "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" "main.pdf" "main" 1728615039.94988 0
   "C:/Users/hanse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1724864967 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/hanse/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1714548301 24236046 ce77420a77f69bee6c86dfdb9885faf7 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -293,22 +293,22 @@
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/hanse/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
   "c:/Users/hanse/OneDrive - University of Florida/Desktop/DesktopRepo/cvx-opt-fall24/homework solutions/main.tex" 1727497531 480 da3176c77fda3c0928ca394ed3bddae8 ""
-  "hw1/hw1-espinosa.aux" 1727982035 7322 8fe36e29b1bb3ffec7172bc83a6ca4f1 "pdflatex"
+  "hw1/hw1-espinosa.aux" 1728615038 7322 8fe36e29b1bb3ffec7172bc83a6ca4f1 "pdflatex"
   "hw1/hw1-espinosa.tex" 1726157602 5683 1099af52aacd7901c3cbbbce960dc153 ""
   "hw1/images/polyhedra_a.png" 1725576680 64456 75b950b78d05ff2de263f86ce4316ea6 ""
   "hw1/images/voronoi_halfspace.png" 1725553543 4976 02d3bd9e63ed1547618f158d7603e853 ""
-  "hw2/hw2-espinosa.aux" 1727982035 7936 010c3cce597b5b6a24c3aa58cb4c5efc "pdflatex"
+  "hw2/hw2-espinosa.aux" 1728615038 7936 010c3cce597b5b6a24c3aa58cb4c5efc "pdflatex"
   "hw2/hw2-espinosa.tex" 1727498215 9384 1c1398baf75f0991a37977c631d4abb6 ""
   "hw2/images/exercise233cone.png" 1726326399 17067 7ccd0f1b9dfd4bb87a21a6048e590d93 ""
-  "hw3/hw3-espinosa.aux" 1727982035 5921 68bea9dd0ee741227da558de020f58a0 "pdflatex"
-  "hw3/hw3-espinosa.tex" 1727982030 3893 aa88adb923e5ecf1466b7759a0185bde ""
+  "hw3/hw3-espinosa.aux" 1728615038 7037 905acac593ef523861ebb65ed1d2877b "pdflatex"
+  "hw3/hw3-espinosa.tex" 1728615030 7104 9903dda13212d8ca357693535427073c ""
   "include/akazachk.sty" 1724864945 19452 3aa7263e155354132100919494cb3812 ""
-  "main.aux" 1727982035 441 88c5545e0a3f3df1b3427c96a28ae442 "pdflatex"
+  "main.aux" 1728615038 441 411524ae080f0c69df6a140da693afc1 "pdflatex"
   "main.bbl" 1726326782 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.out" 1727982035 6632 7f84b63abe3d48fe781349c99620181f "pdflatex"
-  "main.run.xml" 1727982035 2258 a91c127ad539d8c56e10e28939cf8079 "pdflatex"
+  "main.out" 1728615038 7541 d6073143b3716c37bc2f1b8bfa73b938 "pdflatex"
+  "main.run.xml" 1728615038 2258 a91c127ad539d8c56e10e28939cf8079 "pdflatex"
   "main.tex" 1727497531 480 da3176c77fda3c0928ca394ed3bddae8 ""
-  "main.toc" 1727982035 4641 84783516f1dad6238c657721e5f74b6f "pdflatex"
+  "main.toc" 1728615038 5388 755b3d7cdce5316179ceead1af572251 "pdflatex"
   (generated)
   "hw1/hw1-espinosa.aux"
   "hw2/hw2-espinosa.aux"
