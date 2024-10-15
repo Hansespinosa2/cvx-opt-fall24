@@ -585,6 +585,12 @@ OUTPUT hw3\hw3-espinosa.aux
 INPUT .\hw3\hw3-espinosa.tex
 INPUT .\hw3\hw3-espinosa.tex
 INPUT hw3\hw3-espinosa.tex
+INPUT .\hw4\hw4-espinosa.tex
+INPUT .\hw4\hw4-espinosa.tex
+OUTPUT hw4\hw4-espinosa.aux
+INPUT .\hw4\hw4-espinosa.tex
+INPUT .\hw4\hw4-espinosa.tex
+INPUT hw4\hw4-espinosa.tex
 INPUT main.aux
 INPUT .\hw1\hw1-espinosa.aux
 INPUT .\hw1\hw1-espinosa.aux
@@ -595,6 +601,9 @@ INPUT hw2\hw2-espinosa.aux
 INPUT .\hw3\hw3-espinosa.aux
 INPUT .\hw3\hw3-espinosa.aux
 INPUT hw3\hw3-espinosa.aux
+INPUT .\hw4\hw4-espinosa.aux
+INPUT .\hw4\hw4-espinosa.aux
+INPUT hw4\hw4-espinosa.aux
 INPUT .\main.out
 INPUT .\main.out
 INPUT main.run.xml
