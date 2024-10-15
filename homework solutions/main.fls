@@ -452,6 +452,9 @@ INPUT hw2\hw2-espinosa.aux
 INPUT .\hw3\hw3-espinosa.aux
 INPUT .\hw3\hw3-espinosa.aux
 INPUT hw3\hw3-espinosa.aux
+INPUT .\hw4\hw4-espinosa.aux
+INPUT .\hw4\hw4-espinosa.aux
+INPUT hw4\hw4-espinosa.aux
 OUTPUT main.aux
 INPUT C:\Users\hanse\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\hanse\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
