@@ -1,0 +1,149 @@
+\section{Homework 4}
+\subsection{Exercise 4.11}
+The task is to formulate different norms as LPs
+\subsubsection{Part a}
+Minimizing $\| Ax-b \|_\infty$. This norm is the same as the maximum entry of $Ax-b$
+\begin{equation}
+  \min \| Ax-b \|_\infty = \min \max \{A_i x - b_i, i=1,\dots,n\} 
+\end{equation}
+
+\begin{equation}
+  \begin{aligned}
+    \min z \\
+    \text{subject to } z \geq A_i x - b_i, i = 1,\dots, n
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Part b}
+Minimizing$\| Ax-b \|_1$. The $l_1$ norm is equal to
+\begin{equation}
+  \sum_i |A_i x - b_i |
+\end{equation}
+where $A_i$ is the $i$-th row of the matrix $A$. We can turn this into
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \sum_i |z_i| \\ 
+    \text{subject to } z_i = A_i x - b_i; i = 1,\dots,m
+  \end{aligned}
+\end{equation}
+Removing the absolute value
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \sum_i z_i \\ 
+    \text{subject to } A_i x - b_i \leq z_i; i = 1,\dots,m \\
+    b_i - A_i x \leq z_i; i = 1,\dots,m 
+  \end{aligned}
+\end{equation}
+Vector notation
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \textbf{1}^T z \\ 
+    \text{subject to } A x - b \preceq z\\
+    b - A x \preceq z
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Part c}
+Minimizing $\| Ax-b \|_1$ subject to $\| x \|_\infty \leq 1$
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \textbf{1}^T z \\ 
+    \text{subject to } A x - b \preceq z\\
+    b - A x \preceq z \\
+    \| x \|_\infty \leq 1
+  \end{aligned}
+\end{equation}
+Expanding the $l_\infty$ norm
+
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \textbf{1}^T z \\ 
+    \text{subject to } A x - b \preceq z\\
+    b - A x \preceq z \\
+    x  \preceq \textbf{1} \\
+    -x \preceq \textbf{1}
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Part d}
+Minimizing $\| x \|_1$ subject to $\| Ax -b \|_\infty \leq 1$
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \textbf{1}^T z \\ 
+    \text{subject to } x \preceq z\\
+    - x \preceq z \\
+    A x - b \preceq \textbf{1}\\
+    b - A x \preceq \textbf{1}\\
+  \end{aligned}
+\end{equation}
+
+\subsubsection{Part e}
+Minimizing $\| Ax-b \|_1 + \| x \|_\infty$
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \textbf{1}^T z + s \\ 
+    \text{subject to } x \preceq s\\
+    - x \preceq s \\
+    A x - b \preceq z\\
+    b - A x \preceq z\\
+  \end{aligned}
+\end{equation}
+
+
+
+\subsection{Exercise 4.16}
+The minimum fuel optimal control problem as an LP. First, starting with what was given in the problem with minimal changes:
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \sum_{t=0}^{N-1} f(u(t)) \\
+    \text{subject to } x(t+1) = Ax(t) + bu(t) \\
+    x(N) = x_{des} \\ 
+    x(0) = 0
+  \end{aligned}
+\end{equation}
+
+not sure how to do this one 
+
+
+
+\subsection{Exercise 4.29}
+
+
+\subsection{Exercise 4.30}
+
+\subsection{Exercise 5.1}
+Looking at the optimization problem
+
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } x^2 +1 \\
+    \text{subject to } (x-2)(x-4) \leq 0
+  \end{aligned}
+\end{equation}
+\subsubsection{Part a}
+The feasible set is the interval from $[2,4]$. The optimal value is $5$ and the optimal solution is $x=2$ 
+
+\subsubsection{Part b}
+Solving for the lagrangian
+\begin{equation}
+  \begin{aligned}
+    L(\lambda, x) = x^2+1 + \lambda (x-2)(x-4) \\
+    g(\lambda) = \inf_x L(\lambda, x) \\
+    \frac{d }{d x} x^2+1 + \lambda(x-2)(x-4) = 2x + \lambda(2x -6) \\
+    2x + \lambda 2x = 6\lambda \\
+    x = \frac{3\lambda}{1+\lambda} \\ 
+    g(\lambda) = (\frac{3\lambda}{1+\lambda})^2 + 1 + \lambda( (\frac{3\lambda}{1+\lambda}) -2 )(\frac{3\lambda}{1+\lambda} -4)
+  \end{aligned}
+\end{equation}
+
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=0.75\textwidth]{hw4/5_1_part_b_1.png}}
+  \caption{Plot of the feasible set with lagrangian}
+  \label{fig:5_1_b_1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centerline{\includegraphics[width=0.75\textwidth]{hw4/5_1_part_b_2.png}}
+  \caption{Plot of the lagrangian dual}
+  \label{fig:}
+\end{figure}
