@@ -101,13 +101,58 @@ The minimum fuel optimal control problem as an LP. First, starting with what was
     x(0) = 0
   \end{aligned}
 \end{equation}
+With the fact that 
+\begin{equation}
+  f(u) = 
+  \begin{cases} 
+      |u| & |u| \leq 1 \\
+      2|u| -1 & |u|> 1
+  \end{cases}
+\end{equation}
+This is not a linear equation, but we can manipulate it and find that this is equivalent to
+\begin{equation}
+  f(y) = 
+  \begin{cases} 
+      y & y \leq 1 \\
+      2y -1 & y> 1
+  \end{cases}
+\end{equation}
+\begin{equation}
+  \text{subject to } -y \leq u \leq y
+\end{equation}
+This function can be linearized by introducing a new variable as the function and using inequalities.
+\begin{equation}
+  \begin{aligned}
+    f(z) = z \\
+    \text{subject to } z \geq y \\
+    z \geq 2y-1 \\
+    -y \leq u \leq y
+  \end{aligned}
+\end{equation}
 
-not sure how to do this one 
-
+This can be brought to the original problem and formulated as the below LP
+\begin{equation}
+  \begin{aligned}
+    \text{minimize }\textbf{1}^T z \\
+    \text{subject to } x(t+1) = Ax(t) + bu(t) \\
+    x(N) = x_{des} \\
+    x(0) = \textbf{0}  \\
+    z \geq y \\
+    z \geq 2y -1 \\
+    -y \leq u(t) \leq y
+  \end{aligned}
+\end{equation}
 
 
 \subsection{Exercise 4.29}
-
+Verifying convexity or quasiconvexity of the problem 
+\begin{equation}
+  \begin{aligned}
+    \text{maximize } \textbf{prob}(c^T x \geq \alpha) \\
+    \text{subject to } Fx \leq g, Ax = b
+  \end{aligned}
+\end{equation}
+In this problem, the constraints are both affine so the whole problem is convex as long as the objective function is convex.
 
 \subsection{Exercise 4.30}
 
