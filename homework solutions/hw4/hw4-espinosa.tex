@@ -155,6 +155,41 @@ Verifying convexity or quasiconvexity of the problem
 In this problem, the constraints are both affine so the whole problem is convex as long as the objective function is convex.
 
 \subsection{Exercise 4.30}
+For this problem, the costs are defined as 
+\begin{equation}
+  \begin{aligned}
+    c_1 = \frac{\alpha_1 T r}{w} \\
+    c_2 = \alpha_2 r \\
+    c_3 = \alpha_3 r w \\
+    c_T = \sum_{i=1}^{3}c_i
+  \end{aligned}
+\end{equation}
+As stated, this problem can be modeled as 
+\begin{equation}
+  \begin{aligned}
+    \text{maximize } \alpha_4 T r^2 \\
+    \text{subject to } \frac{\alpha_1 T r}{w} + \alpha_2 r + \alpha_3 r w \leq C_{max} \\
+    T_{min} \leq T \leq T_{max} \\
+    r_{min} \leq r \leq r_{max} \\
+    w_{min} \leq w \leq w_{max} \\
+    w \leq 0.1r
+  \end{aligned}
+\end{equation}
+
+This is equivalent to the below geometric program
+\begin{equation}
+  \begin{aligned}
+    \text{minimize } \frac{1}{\alpha_4} T^{-1} r^{-2} \\
+    \text{subject to } \frac{\alpha_1 T r w^{-1} + \alpha_2 r + \alpha_3 r w}{C_{max}}\leq  1\\
+    \frac{1}{T_{max}} T  \leq 1 \\
+    T_{min} T^{-1}\leq 1 \\
+    \frac{1}{w_{max}} w  \leq 1 \\
+    w_{min} w^{-1} \leq 1 \\
+    \frac{1}{r_{max}} r  \leq 1 \\
+    r_{min} r^{-1}\leq 1 \\
+    10wr^{-1} \leq 1
+  \end{aligned}
+\end{equation}
 
 \subsection{Exercise 5.1}
 Looking at the optimization problem
