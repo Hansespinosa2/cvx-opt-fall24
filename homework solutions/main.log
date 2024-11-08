@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.1)  8 NOV 2024 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.1)  8 NOV 2024 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1395,11 +1395,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (main.toc [1
 
-{C:/Users/hanse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}])
+{C:/Users/hanse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [2])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2]
+ [3]
 \openout2 = `hw1/hw1-espinosa.aux'.
 
  (hw1/hw1-espinosa.tex
@@ -1417,12 +1417,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-<hw1/images/voronoi_halfspace.png, id=416, 462.528pt x 346.896pt>
+<hw1/images/voronoi_halfspace.png, id=440, 462.528pt x 346.896pt>
 File: hw1/images/voronoi_halfspace.png Graphic file (type png)
 <use hw1/images/voronoi_halfspace.png>
 Package pdftex.def Info: hw1/images/voronoi_halfspace.png  used on input line 32.
 (pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
-<hw1/images/polyhedra_a.png, id=418, 462.528pt x 346.896pt>
+<hw1/images/polyhedra_a.png, id=442, 462.528pt x 346.896pt>
 File: hw1/images/polyhedra_a.png Graphic file (type png)
 <use hw1/images/polyhedra_a.png>
 Package pdftex.def Info: hw1/images/polyhedra_a.png  used on input line 40.
@@ -1432,9 +1432,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
  []
 
-[3
+[4
 
-{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [4 <./hw1/images/voronoi_halfspace.png> <./hw1/images/polyhedra_a.png>] [5]) [6]
+{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [5 <./hw1/images/voronoi_halfspace.png> <./hw1/images/polyhedra_a.png>] [6]) [7]
 \openout2 = `hw2/hw2-espinosa.aux'.
 
  (hw2/hw2-espinosa.tex
@@ -1456,12 +1456,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
 
  []
 
-[7
+[8
 
 
 
 {C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-<hw2/images/exercise233cone.png, id=470, 462.528pt x 346.896pt>
+<hw2/images/exercise233cone.png, id=494, 462.528pt x 346.896pt>
 File: hw2/images/exercise233cone.png Graphic file (type png)
 <use hw2/images/exercise233cone.png>
 Package pdftex.def Info: hw2/images/exercise233cone.png  used on input line 63.
@@ -1476,40 +1476,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--67
 
  []
 
-[8 <./hw2/images/exercise233cone.png>] [9] [10] [11]) [12]
+[9 <./hw2/images/exercise233cone.png>] [10] [11] [12]) [13]
 \openout2 = `hw3/hw3-espinosa.aux'.
 
- (hw3/hw3-espinosa.tex [13
+ (hw3/hw3-espinosa.tex [14
 
 
 
-] [14] [15]
+] [15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-) [16]
+) [17]
 \openout2 = `hw4/hw4-espinosa.aux'.
 
- (hw4/hw4-espinosa.tex [17
+ (hw4/hw4-espinosa.tex [18
 
 
 
-] [18] [19]
-<hw4/5_1_part_b_1.png, id=611, 722.7pt x 433.62pt>
+] [19] [20]
+<hw4/5_1_part_b_1.png, id=635, 722.7pt x 433.62pt>
 File: hw4/5_1_part_b_1.png Graphic file (type png)
 <use hw4/5_1_part_b_1.png>
 Package pdftex.def Info: hw4/5_1_part_b_1.png  used on input line 220.
 (pdftex.def)             Requested size: 352.31625pt x 211.39055pt.
-<hw4/5_1_part_b_2.png, id=612, 722.7pt x 433.62pt>
+<hw4/5_1_part_b_2.png, id=636, 722.7pt x 433.62pt>
 File: hw4/5_1_part_b_2.png Graphic file (type png)
 <use hw4/5_1_part_b_2.png>
 Package pdftex.def Info: hw4/5_1_part_b_2.png  used on input line 226.
 (pdftex.def)             Requested size: 352.31625pt x 211.39055pt.
-) [20] [21 <./hw4/5_1_part_b_1.png> <./hw4/5_1_part_b_2.png>]
+) [21] [22 <./hw4/5_1_part_b_1.png> <./hw4/5_1_part_b_2.png>]
 \openout2 = `hw5/hw5-espinosa.aux'.
 
- (hw5/hw5-espinosa.tex)
+ (hw5/hw5-espinosa.tex
+<hw5/lp_relaxed_polyhedron.png, id=652, 462.528pt x 346.896pt>
+File: hw5/lp_relaxed_polyhedron.png Graphic file (type png)
+<use hw5/lp_relaxed_polyhedron.png>
+Package pdftex.def Info: hw5/lp_relaxed_polyhedron.png  used on input line 22.
+(pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--26
+
+ []
+
+) [23
+
+
+
+] [24 <./hw5/lp_relaxed_polyhedron.png>]
 No complaints by nag.
 (main.aux (hw1/hw1-espinosa.aux) (hw2/hw2-espinosa.aux) (hw3/hw3-espinosa.aux) (hw4/hw4-espinosa.aux) (hw5/hw5-espinosa.aux))
  ***********
@@ -1517,23 +1532,23 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 346FD32B151813C17B15EB3B8B387F56;8970.
+(rerunfilecheck)             Checksum: 826700B3E764A15BF42C295A94B9275B;9395.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45969 strings out of 474423
- 969444 string characters out of 5741719
+ 45996 strings out of 474423
+ 970005 string characters out of 5741719
  1950496 words of memory out of 5000000
- 67331 multiletter control sequences out of 15000+600000
+ 67344 multiletter control sequences out of 15000+600000
  618657 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,1219b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/hanse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 508111 bytes).
+Output written on main.pdf (24 pages, 528521 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 211 named destinations out of 1000 (max. 500000)
- 670 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 792 PDF objects out of 1000 (max. 8388607)
+ 225 named destinations out of 1000 (max. 500000)
+ 707 words of extra memory for PDF output out of 10000 (max. 10000000)
 
