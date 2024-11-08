@@ -455,6 +455,9 @@ INPUT hw3\hw3-espinosa.aux
 INPUT .\hw4\hw4-espinosa.aux
 INPUT .\hw4\hw4-espinosa.aux
 INPUT hw4\hw4-espinosa.aux
+INPUT .\hw5\hw5-espinosa.aux
+INPUT .\hw5\hw5-espinosa.aux
+INPUT hw5\hw5-espinosa.aux
 OUTPUT main.aux
 INPUT C:\Users\hanse\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\hanse\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -608,6 +611,12 @@ INPUT .\hw4\5_1_part_b_2.png
 INPUT .\hw4\5_1_part_b_2.png
 INPUT .\hw4\5_1_part_b_2.png
 INPUT .\hw4\5_1_part_b_2.png
+INPUT .\hw5\hw5-espinosa.tex
+INPUT .\hw5\hw5-espinosa.tex
+OUTPUT hw5\hw5-espinosa.aux
+INPUT .\hw5\hw5-espinosa.tex
+INPUT .\hw5\hw5-espinosa.tex
+INPUT hw5\hw5-espinosa.tex
 INPUT main.aux
 INPUT .\hw1\hw1-espinosa.aux
 INPUT .\hw1\hw1-espinosa.aux
@@ -621,6 +630,9 @@ INPUT hw3\hw3-espinosa.aux
 INPUT .\hw4\hw4-espinosa.aux
 INPUT .\hw4\hw4-espinosa.aux
 INPUT hw4\hw4-espinosa.aux
+INPUT .\hw5\hw5-espinosa.aux
+INPUT .\hw5\hw5-espinosa.aux
+INPUT hw5\hw5-espinosa.aux
 INPUT .\main.out
 INPUT .\main.out
 INPUT main.run.xml
