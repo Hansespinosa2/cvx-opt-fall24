@@ -458,6 +458,9 @@ INPUT hw4/hw4-espinosa.aux
 INPUT ./hw5/hw5-espinosa.aux
 INPUT ./hw5/hw5-espinosa.aux
 INPUT hw5/hw5-espinosa.aux
+INPUT ./hw6/hw6-espinosa.aux
+INPUT ./hw6/hw6-espinosa.aux
+INPUT hw6/hw6-espinosa.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -612,6 +615,12 @@ INPUT ./hw5/lp_relaxed_polyhedron.png
 INPUT ./hw5/lp_relaxed_polyhedron.png
 INPUT ./hw5/lp_relaxed_polyhedron.png
 INPUT ./hw5/lp_relaxed_polyhedron.png
+INPUT ./hw6/hw6-espinosa.tex
+INPUT ./hw6/hw6-espinosa.tex
+OUTPUT hw6/hw6-espinosa.aux
+INPUT ./hw6/hw6-espinosa.tex
+INPUT ./hw6/hw6-espinosa.tex
+INPUT hw6/hw6-espinosa.tex
 INPUT main.aux
 INPUT ./hw1/hw1-espinosa.aux
 INPUT ./hw1/hw1-espinosa.aux
@@ -628,6 +637,9 @@ INPUT hw4/hw4-espinosa.aux
 INPUT ./hw5/hw5-espinosa.aux
 INPUT ./hw5/hw5-espinosa.aux
 INPUT hw5/hw5-espinosa.aux
+INPUT ./hw6/hw6-espinosa.aux
+INPUT ./hw6/hw6-espinosa.aux
+INPUT hw6/hw6-espinosa.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
