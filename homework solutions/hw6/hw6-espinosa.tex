@@ -135,3 +135,36 @@ This is maximized when we solve the LP
   \text{maximize} & \quad \textbf{1}^\top (Ax-y) \\
   \text{subject to} & \quad y \succeq Ax
 \end{align}
+
+\subsection{Additional Problem HW 6.2}
+This question is solved in both this pdf and the code notebook.
+\\ \\
+A set of $n$ teams compete in a tournament. We model each team's ability by a number $a_j \in [0,1], j = 1, \dots, n$. When teams $j$ and $k$ play each other, the probability that team $j$ wins is equal to $\textbf{prob}(a_j - a_k + v > 0)$ where $v \sim N(0, \sigma^2)$. \\
+You are given the outcome of $m$ past games. These are organized as
+\begin{equation}
+    (j^{(i)}, k^{(i)}, y^{(i)}), \quad i = 1, \dots, m
+\end{equation}
+meaning that the game $i$ was played between teams $j^{(i)}, k^{(i)}$; $y^{(i)}=1$ means that team $j^{(i)}$ won, while $y^{(i)}=-1$ means that team $k^{(i)}$ won.
+\subsubsection{Part a}
+This part involves finding the maximum likelihood estimate of the team abilities $\hat{a} \in \mathbb{R}^n$ given the outcomes  $(j^{(i)}, k^{(i)}, y^{(i)})$.
+
+\begin{gather}
+    p(y^{(i)} | a^{(i)}) = \textbf{prob} (a_j^{(i)} - a_k^{(i)} + v > 0) \\
+    = \textbf{prob} (v > a_k^{(i)} - a_j^{(i)}) =  \textbf{prob} (Z > \frac{a_k^{(i)} - a_j^{(i)}}{\sigma}) \\
+    1 - \Phi (\frac{a_k^{(i)} - a_j^{(i)}}{\sigma}) = \Phi (\frac{a_j^{(i)} - a_k^{(i)}}{\sigma})
+\end{gather}
+Now we  want to go over all outcomes
+\begin{gather}
+    l(a) = \prod_{i=1}^{m} \Phi (y^{(i)}\frac{a_j^{(i)} - a_k^{(i)}}{\sigma}) \\
+    l(a) = \sum_{i=1}^{m} \log \Phi (y^{(i)}\frac{a_j^{(i)} - a_k^{(i)}}{\sigma}) \\
+    l(a) = \sum_{i=1}^{m} \log \Phi (\frac{1}{\sigma} (Aa)_1)
+\end{gather}
+
+The optimization problem is
+\begin{align}
+  \text{maximize} & \quad l(a) \\
+  \text{subject to} & \quad  0 \preceq a \preceq 1
+\end{align}
+
+\subsubsection{Part b}
+Solved in the notebook
