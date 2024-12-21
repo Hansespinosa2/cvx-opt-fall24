@@ -101,3 +101,4 @@
 \contentsline {subsubsection}{\numberline {6.1.1}Part a}{31}{subsubsection.6.1.1}%
 \contentsline {subsubsection}{\numberline {6.1.2}Part b}{32}{subsubsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.2}Exercise 6.9}{32}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Exercise 7.1}{33}{subsection.6.3}%

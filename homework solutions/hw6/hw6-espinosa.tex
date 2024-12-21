@@ -103,3 +103,35 @@ This problem effectively involves minimizing the maximum distance between a rati
 \\ \\
 This objective function is quasiconvex if its domain is convex. The domain is convex as the only restriction on the $(a,b) \in \mathbb{R}^{m+1} \times \mathbb{R}^n$ is a lower and upper bound restriction on the given parameter $t$ and the inequality $q(t) = 1 + b_1 t + \dots + b_n t^n > 0$ this is an affine inequality over the variable and is therefore convex.
 \\
+
+\subsection{Exercise 7.1}
+This exercise involves solving the maximum likelihood problem when the noise is exponentially distributed with density
+
+\begin{equation}
+    p(z) = 
+    \begin{cases}
+        \frac{1}{a} e^{-\frac{z}{a}} & z \geq 0 \\
+        0 & z < 0
+    \end{cases}
+\end{equation}
+
+The maximum likelihood problem is 
+\begin{align}
+  \text{maximize} & \quad \sum_{i=1}^m \log p(y_i - a_i^\top x)
+\end{align}
+
+\begin{gather}
+   \log p(y_i - a_i^\top x) = \log (\frac{1}{a} e^{-\frac{y_i - a_i^\top x}{a}}) \\
+   = -\log (a) -\frac{y_i - a_i^\top x}{a}
+\end{gather}
+
+\begin{gather}
+    \sum_{i=1}^m -\log (a) -\frac{y_i - a_i^\top x}{a} = -m \log(a) + \frac{1}{a}\textbf{1}^\top(Ax -y) 
+\end{gather}
+
+This is maximized when we solve the LP
+
+\begin{align}
+  \text{maximize} & \quad \textbf{1}^\top (Ax-y) \\
+  \text{subject to} & \quad y \succeq Ax
+\end{align}
