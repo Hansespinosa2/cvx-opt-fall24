@@ -1,1 +1,105 @@
 \section{Homework 6}
+
+\subsection{Exercise 6.3}
+Formatting the following approximation problems as LPs, QPs, SOCPs, or SDPs. $A \in \mathbb{R}^{m \times x}, b \in \mathbb{R}^m$. The rows of $A$ are denoted $a_i^\top$
+
+\subsubsection{Part a}
+Deadzone-linear penalty approximation: minimize $\sum_{i=1}^{m} \phi(a_i^\top x - b_i)$ where
+\begin{equation}
+    \phi(u) = \begin{cases}
+        0 & |u| \leq a \\
+        |u| - a & |u| > a
+    \end{cases}
+\end{equation}
+
+The deadzone linear function is the same as 
+\begin{equation}
+    \phi(u) = \max \{ 0 , |u| - a \}
+\end{equation}
+
+The above is equivalent to
+
+\begin{align}
+  \text{minimize} & \quad t \\
+  \text{subject to} & \quad t \geq 0  \\
+  & \quad t \geq |u| - a
+\end{align}
+
+which is equivalent to
+
+\begin{align}
+    \text{minimize} & \quad t \\
+    \text{subject to} & \quad t \geq 0  \\
+    & \quad t + a \geq u \\
+    & \quad t + a \geq -u
+  \end{align}
+
+Bringing it home
+
+\begin{align}
+  \text{minimize} & \quad \sum_i t_i  \\
+  \text{subject to} & \quad t_i  \geq 0 & \quad \forall i  \\
+  & \quad t_i  + \alpha  \geq a_i^\top x - b_i & \quad\forall i\\
+  & \quad t_i + \alpha \geq - a_i^\top x + b_i & \quad\forall i 
+\end{align}
+
+We can vectorize this to be
+
+\begin{align}
+  \text{minimize} & \quad \textbf{1}^\top t \\
+  \text{subject to} & \quad -t - \alpha \textbf{1} \preceq Ax - b \preceq  t + \alpha \textbf{1} \\
+  & \quad t \succeq 0
+\end{align}
+
+\subsubsection{Part b}
+Log-barrier penalty approximation: minimize $\sum_{i=1}^{m} \phi(a_i^\top x - b_i)$ where
+\begin{equation}
+    \phi(u) = \begin{cases}
+        -a^2 \log (1- (\frac{u}{a})^2) & |u| < a \\
+        \infty & |u| \geq a
+    \end{cases}
+\end{equation}
+
+The function
+\begin{equation}
+    -a^2 \log (1- (\frac{u}{a})^2)
+\end{equation}
+is convex in $u$ as the composition order is 
+\begin{gather}
+    (\frac{u}{a})^2 \quad convex \\
+    1- convex \quad concave \\
+    \log conc(NI) \quad concave \\
+    - concave \quad convex
+\end{gather}
+
+\begin{align}
+  \text{minimize} & \quad \sum_{i=1}^{m} -a^2 \log(1- (\frac{a_i^\top x - b_i}{a})^2) \\
+  \text{subject to} & \quad -a \leq a_i^\top x - b_i \leq a 
+\end{align}
+
+This is convex
+
+
+
+
+\subsection{Exercise 6.9}
+This exercise involves showing that the following problem is quasiconvex:
+
+\begin{align}
+  \text{minimize} & \quad \max_{i=1,\dots,k} |\frac{p(t_i)}{q(t_i)} - y_i|
+\end{align}
+
+where
+\begin{equation}
+    p(t) = a_0 + a_1 t + a_2 t^2 + \dots + a_m t^m, \quad q(t) = 1 + b_1 t + \dots + b_n t^n 
+\end{equation}
+
+and the domain of the objective function is defined as
+\begin{equation}
+    D = \{ (a,b) \in \mathbb{R}^{m+1} \times \mathbb{R}^n | q(t) > 0, \alpha \leq t \leq  \beta \}
+\end{equation}
+
+This problem effectively involves minimizing the maximum distance between a ratio of polynomials and measured data indexed by $i$. We are optimizing over the decision variables $a_i, b_i$. The points that we are measuring lie between $[\alpha, \beta]$ and $t_i, y_i$ are problem parameters that are given.
+\\ \\
+This objective function is quasiconvex if its domain is convex. The domain is convex as the only restriction on the $(a,b) \in \mathbb{R}^{m+1} \times \mathbb{R}^n$ is a lower and upper bound restriction on the given parameter $t$ and the inequality $q(t) = 1 + b_1 t + \dots + b_n t^n > 0$ this is an affine inequality over the variable and is therefore convex.
+\\
