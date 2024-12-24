@@ -168,3 +168,23 @@ The optimization problem is
 
 \subsubsection{Part b}
 Solved in the notebook
+
+\subsection{Additional Problem HW 6.3}
+This question involves doing piecewise-linear fitting on one variable. Following from what the hint says, we can define parameters $\alpha, \beta$ that parametrize $y = \alpha_i x + \beta_i $ where these parameters change on each selection of data. Effectively, this problem boils down to solving a bunch of linear regressions with the added constraint of having the following linear regression begin on the same point that the previous one ended on. 
+\begin{align}
+  \text{minimize} & \quad \| \max_i \alpha_i x + \beta_i -y \|_2^2 \\
+  \text{subject to} & \quad \alpha_{i-1} a_{i-1} + \beta_{i-1} = \alpha_{i} a_{i-1} + \beta_{i} & \forall i \in \{ 1, \dots, K \}
+\end{align}
+
+The constraint can be turned into the linear matrix equality 
+
+\begin{align}
+  C
+  \begin{bmatrix}
+    \alpha \\
+    \beta    
+  \end{bmatrix}
+  = B
+\end{align}
+
+Where C is a banded $\mathbb{R}^{K \times 2 (K+1)}$matrix  with width 2 and entries $a_i, -a_i$ on each row
