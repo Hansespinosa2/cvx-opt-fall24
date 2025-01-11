@@ -106,3 +106,6 @@
 \contentsline {subsubsection}{\numberline {6.4.1}Part a}{33}{subsubsection.6.4.1}%
 \contentsline {subsubsection}{\numberline {6.4.2}Part b}{34}{subsubsection.6.4.2}%
 \contentsline {subsection}{\numberline {6.5}Additional Problem HW 6.3}{34}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Homework 7}{35}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Exercise 8.16}{35}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Exercise 9.30}{35}{subsection.7.2}%

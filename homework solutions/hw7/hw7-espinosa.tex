@@ -1,0 +1,42 @@
+\section{Homework 7}
+
+\subsection{Exercise 8.16}
+This problem involves formulating the following problewm as a convex optimization problem: Find the rectangle
+\begin{equation}
+    R = \{ x \in \mathbb{R}^n | l \preceq x \preceq u  \}
+\end{equation}
+of maximum volume, enclosed in a polyhedron $P = \{ x | Ax \preceq b \}$ with variables $l, u$.
+\\ \\
+For this problem, the volume of the rectangle can be defined as 
+\begin{equation}
+    V(R) = \prod_{i=1}^{n} (u-l)_i
+\end{equation}
+This is not convex but maximizing this will be equivalent to maximizing
+\begin{equation}
+    \log V(R) = \sum_{i=1}^n \log (u - l)_i
+\end{equation}
+
+We can define the constraint that the rectangle must be in the polyhedron as
+\begin{equation}
+    \sup_{ l \preceq x \preceq u} Ax  \preceq b 
+\end{equation}
+
+Let $A_i$ be the  $i$-th row of A. where $A \in \mathbb{R}^{m \times n}$. We can define $A_i^+$ be the vector where each entry $j$ is $\max\{A_{ij}, 0\}$. Similarly, we define a vector $A_{i}^-$ where each entry $j$ is $\max\{ -A_{ij},0 \}$. We then transform the above constraint into the equivalent
+
+\begin{equation}
+    {A_i^+}^\top u - {A_i^-}^\top l \leq b_i \forall i \in \{ 1,\dots, m \}
+\end{equation}
+
+The final optimization problem is therefore turned into
+
+\begin{align}
+  \text{minimize} & \quad - \sum_{i=1}^n \log(u - l)_i \\
+  \text{subject to} & \quad {A_i^+}^\top u - {A_i^-}^\top l \leq b_i \quad \forall i \in \{ 1,\dots, m \} \\
+  & \quad l \preceq u
+\end{align}
+
+\subsection{Exercise 9.30}
+This question is solved in the code notebook with some scrap work present here
+\begin{equation}
+    \nabla f(x) = -\sum_{i=1}^m \frac{1}{1-a_i^\top x} a_i - 2x \odot \frac{1}{1 - \text{diag(x)}x}
+\end{equation}

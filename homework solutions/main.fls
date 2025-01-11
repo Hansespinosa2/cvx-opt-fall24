@@ -461,6 +461,9 @@ INPUT hw5/hw5-espinosa.aux
 INPUT ./hw6/hw6-espinosa.aux
 INPUT ./hw6/hw6-espinosa.aux
 INPUT hw6/hw6-espinosa.aux
+INPUT ./hw7/hw7-espinosa.aux
+INPUT ./hw7/hw7-espinosa.aux
+INPUT hw7/hw7-espinosa.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -621,6 +624,12 @@ OUTPUT hw6/hw6-espinosa.aux
 INPUT ./hw6/hw6-espinosa.tex
 INPUT ./hw6/hw6-espinosa.tex
 INPUT hw6/hw6-espinosa.tex
+INPUT ./hw7/hw7-espinosa.tex
+INPUT ./hw7/hw7-espinosa.tex
+OUTPUT hw7/hw7-espinosa.aux
+INPUT ./hw7/hw7-espinosa.tex
+INPUT ./hw7/hw7-espinosa.tex
+INPUT hw7/hw7-espinosa.tex
 INPUT main.aux
 INPUT ./hw1/hw1-espinosa.aux
 INPUT ./hw1/hw1-espinosa.aux
@@ -640,6 +649,9 @@ INPUT hw5/hw5-espinosa.aux
 INPUT ./hw6/hw6-espinosa.aux
 INPUT ./hw6/hw6-espinosa.aux
 INPUT hw6/hw6-espinosa.aux
+INPUT ./hw7/hw7-espinosa.aux
+INPUT ./hw7/hw7-espinosa.aux
+INPUT hw7/hw7-espinosa.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
