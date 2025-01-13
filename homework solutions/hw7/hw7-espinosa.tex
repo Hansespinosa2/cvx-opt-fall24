@@ -38,5 +38,44 @@ The final optimization problem is therefore turned into
 \subsection{Exercise 9.30}
 This question is solved in the code notebook with some scrap work present here
 \begin{equation}
-    \nabla f(x) = -\sum_{i=1}^m \frac{1}{1-a_i^\top x} a_i - 2x \odot \frac{1}{1 - \text{diag(x)}x}
+    \nabla f(x) = A^\top \frac{1}{1-Ax} + 2x \odot \frac{1}{1 - \text{diag(x)}x}
 \end{equation}
+
+\begin{equation}
+    \nabla^2 f(x) = A^2(\frac{1}{(1-Ax)^2}) + \text{diag(v)}
+\end{equation}
+
+where $v$ is a vector with $i$-th entries $\frac{1+x_i^2}{(1-x_i^2)^2}$
+
+\subsection{Additional Exercise HW7.1}
+This is solved in the code notebook with some scrap work present here.
+\begin{equation}
+    x^{(1)}, \dots, x^{(N)}, \quad y^{(1)}, \dots, y^{(M)}, \quad z^{(1)}, \dots, z^{(P)}
+\end{equation}
+
+\begin{equation}
+    f_i(z) = a_i^\top z - b_i, \quad i=1,2,3
+\end{equation}
+
+\begin{gather}
+    f_1(x^{(j)}) > \max \{ f_2(x^{(j)}), f_3(x^{(j)}) \}, \quad j=1,\dots,N \\
+    f_2(y^{(j)}) > \max \{ f_1(y^{(j)}), f_3(y^{(j)}) \}, \quad j=1,\dots,M \\
+    f_3(z^{(j)}) > \max \{ f_1(z^{(j)}), f_2(z^{(j)}) \}, \quad j=1,\dots,P \\
+\end{gather}
+
+\begin{gather}
+    R_1 = \{ z | f_1(z) > \max \{ f_2(z), f_3(z) \} \} \\
+    R_2 = \{ z | f_2(z) > \max \{ f_1(z), f_3(z) \} \} \\
+    R_3 = \{ z | f_3(z) > \max \{ f_1(z), f_2(z) \} \}
+\end{gather}
+
+I think one way to approach this problem is to think about it as three separate linear classifiers that must intersect. This approach will use a robust linear classifier with three regions
+
+\begin{align}
+  \text{minimize} & \quad -u - w - v \\
+  \text{subject to} & \quad f_1(x^{(j)}) \geq \max \{ f_2(x^{(j)}), f_3(x^{(j)}) \} + u \\
+  & \quad f_2(y^{(j)}) \geq \max \{ f_1(y^{(j)}), f_3(y^{(j)}) \} + w \\
+  & \quad f_3(z^{(j)}) \geq \max \{ f_1(z^{(j)}), f_2(z^{(j)}) \} + v \\
+  & \quad \sum_i a_i = 0 \\
+  & \quad \sum_i b_i = 0
+\end{align}
