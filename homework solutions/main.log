@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.3)  12 JAN 2025 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.3)  13 JAN 2025 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1266,7 +1266,7 @@ Package csquotes Info: ... none found.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 16.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./main.aux (./hw1/hw1-espinosa.aux) (./hw2/hw2-espinosa.aux) (./hw3/hw3-espinosa.aux) (./hw4/hw4-espinosa.aux) (./hw5/hw5-espinosa.aux) (./hw6/hw6-espinosa.aux) (./hw7/hw7-espinosa.aux))
+) (./main.aux (./hw1/hw1-espinosa.aux) (./hw2/hw2-espinosa.aux) (./hw3/hw3-espinosa.aux) (./hw4/hw4-espinosa.aux) (./hw5/hw5-espinosa.aux) (./hw6/hw6-espinosa.aux) (./hw7/hw7-espinosa.aux) (./hw8/hw8-espinosa.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1417,12 +1417,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
-<hw1/images/voronoi_halfspace.png, id=589, 462.528pt x 346.896pt>
+<hw1/images/voronoi_halfspace.png, id=599, 462.528pt x 346.896pt>
 File: hw1/images/voronoi_halfspace.png Graphic file (type png)
 <use hw1/images/voronoi_halfspace.png>
 Package pdftex.def Info: hw1/images/voronoi_halfspace.png  used on input line 32.
 (pdftex.def)             Requested size: 352.31625pt x 264.25241pt.
-<hw1/images/polyhedra_a.png, id=591, 462.528pt x 346.896pt>
+<hw1/images/polyhedra_a.png, id=601, 462.528pt x 346.896pt>
 File: hw1/images/polyhedra_a.png Graphic file (type png)
 <use hw1/images/polyhedra_a.png>
 Package pdftex.def Info: hw1/images/polyhedra_a.png  used on input line 40.
@@ -1461,7 +1461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
 
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<hw2/images/exercise233cone.png, id=644, 462.528pt x 346.896pt>
+<hw2/images/exercise233cone.png, id=654, 462.528pt x 346.896pt>
 File: hw2/images/exercise233cone.png Graphic file (type png)
 <use hw2/images/exercise233cone.png>
 Package pdftex.def Info: hw2/images/exercise233cone.png  used on input line 63.
@@ -1496,12 +1496,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
 
 ] [19] [20]
-<hw4/5_1_part_b_1.png, id=786, 722.7pt x 433.62pt>
+<hw4/5_1_part_b_1.png, id=796, 722.7pt x 433.62pt>
 File: hw4/5_1_part_b_1.png Graphic file (type png)
 <use hw4/5_1_part_b_1.png>
 Package pdftex.def Info: hw4/5_1_part_b_1.png  used on input line 220.
 (pdftex.def)             Requested size: 352.31625pt x 211.39055pt.
-<hw4/5_1_part_b_2.png, id=787, 722.7pt x 433.62pt>
+<hw4/5_1_part_b_2.png, id=797, 722.7pt x 433.62pt>
 File: hw4/5_1_part_b_2.png Graphic file (type png)
 <use hw4/5_1_part_b_2.png>
 Package pdftex.def Info: hw4/5_1_part_b_2.png  used on input line 226.
@@ -1510,7 +1510,7 @@ Package pdftex.def Info: hw4/5_1_part_b_2.png  used on input line 226.
 \openout2 = `hw5/hw5-espinosa.aux'.
 
  (./hw5/hw5-espinosa.tex
-<hw5/lp_relaxed_polyhedron.png, id=803, 462.528pt x 346.896pt>
+<hw5/lp_relaxed_polyhedron.png, id=813, 462.528pt x 346.896pt>
 File: hw5/lp_relaxed_polyhedron.png Graphic file (type png)
 <use hw5/lp_relaxed_polyhedron.png>
 Package pdftex.def Info: hw5/lp_relaxed_polyhedron.png  used on input line 22.
@@ -1559,31 +1559,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
 
 ]) [36]
+\openout2 = `hw8/hw8-espinosa.aux'.
+
+ (./hw8/hw8-espinosa.tex) [37
+
+
+
+]
 No complaints by nag.
-(./main.aux (./hw1/hw1-espinosa.aux) (./hw2/hw2-espinosa.aux) (./hw3/hw3-espinosa.aux) (./hw4/hw4-espinosa.aux) (./hw5/hw5-espinosa.aux) (./hw6/hw6-espinosa.aux) (./hw7/hw7-espinosa.aux))
+(./main.aux (./hw1/hw1-espinosa.aux) (./hw2/hw2-espinosa.aux) (./hw3/hw3-espinosa.aux) (./hw4/hw4-espinosa.aux) (./hw5/hw5-espinosa.aux) (./hw6/hw6-espinosa.aux) (./hw7/hw7-espinosa.aux) (./hw8/hw8-espinosa.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 57E5D88F0C468CBADBD1148C1787A084;12945.
+(rerunfilecheck)             Checksum: FC93D7A01512D3A8975A9BFAD45A0863;13165.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46189 strings out of 474116
- 964057 string characters out of 5743682
+ 46222 strings out of 474116
+ 964912 string characters out of 5743682
  1949187 words of memory out of 5000000
- 67364 multiletter control sequences out of 15000+600000
- 618657 words of font info for 79 fonts, out of 8000000 for 9000
+ 67385 multiletter control sequences out of 15000+600000
+ 622920 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,1190b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (36 pages, 498568 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (37 pages, 514959 bytes).
 PDF statistics:
- 1171 PDF objects out of 1200 (max. 8388607)
- 1077 compressed objects within 11 object streams
- 403 named destinations out of 1000 (max. 500000)
- 939 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1193 PDF objects out of 1200 (max. 8388607)
+ 1096 compressed objects within 11 object streams
+ 406 named destinations out of 1000 (max. 500000)
+ 955 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -464,6 +464,9 @@ INPUT hw6/hw6-espinosa.aux
 INPUT ./hw7/hw7-espinosa.aux
 INPUT ./hw7/hw7-espinosa.aux
 INPUT hw7/hw7-espinosa.aux
+INPUT ./hw8/hw8-espinosa.aux
+INPUT ./hw8/hw8-espinosa.aux
+INPUT hw8/hw8-espinosa.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -630,6 +633,13 @@ OUTPUT hw7/hw7-espinosa.aux
 INPUT ./hw7/hw7-espinosa.tex
 INPUT ./hw7/hw7-espinosa.tex
 INPUT hw7/hw7-espinosa.tex
+INPUT ./hw8/hw8-espinosa.tex
+INPUT ./hw8/hw8-espinosa.tex
+OUTPUT hw8/hw8-espinosa.aux
+INPUT ./hw8/hw8-espinosa.tex
+INPUT ./hw8/hw8-espinosa.tex
+INPUT hw8/hw8-espinosa.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT main.aux
 INPUT ./hw1/hw1-espinosa.aux
 INPUT ./hw1/hw1-espinosa.aux
@@ -652,6 +662,9 @@ INPUT hw6/hw6-espinosa.aux
 INPUT ./hw7/hw7-espinosa.aux
 INPUT ./hw7/hw7-espinosa.aux
 INPUT hw7/hw7-espinosa.aux
+INPUT ./hw8/hw8-espinosa.aux
+INPUT ./hw8/hw8-espinosa.aux
+INPUT hw8/hw8-espinosa.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
@@ -667,6 +680,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
