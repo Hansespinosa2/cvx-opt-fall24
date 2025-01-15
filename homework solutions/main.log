@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.3)  14 JAN 2025 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.3)  14 JAN 2025 23:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1561,11 +1561,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
 ]) [36]
 \openout2 = `hw8/hw8-espinosa.aux'.
 
- (./hw8/hw8-espinosa.tex) [37
+ (./hw8/hw8-espinosa.tex [37
 
 
 
-]
+]) [38]
 No complaints by nag.
 (./main.aux (./hw1/hw1-espinosa.aux) (./hw2/hw2-espinosa.aux) (./hw3/hw3-espinosa.aux) (./hw4/hw4-espinosa.aux) (./hw5/hw5-espinosa.aux) (./hw6/hw6-espinosa.aux) (./hw7/hw7-espinosa.aux) (./hw8/hw8-espinosa.aux))
  ***********
@@ -1579,18 +1579,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46238 strings out of 474116
- 965188 string characters out of 5743682
+ 46255 strings out of 474116
+ 965419 string characters out of 5743682
  1949187 words of memory out of 5000000
  67391 multiletter control sequences out of 15000+600000
  622920 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,1190b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (37 pages, 520502 bytes).
+Output written on main.pdf (38 pages, 525249 bytes).
 PDF statistics:
- 1230 PDF objects out of 1440 (max. 8388607)
- 1132 compressed objects within 12 object streams
- 416 named destinations out of 1000 (max. 500000)
+ 1255 PDF objects out of 1440 (max. 8388607)
+ 1156 compressed objects within 12 object streams
+ 433 named destinations out of 1000 (max. 500000)
  1003 words of extra memory for PDF output out of 10000 (max. 10000000)
 
