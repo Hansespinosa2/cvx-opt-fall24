@@ -1,3 +1,41 @@
 \section{Homework 8}
 \subsection{Exercise 9.8}
 \textit{Steepest descent method in $l_\infty$-norm}. Explain how to find a steepest descent direction in the $l_\infty$-norm and give a simple interpretation.
+\begin{gather}
+    \Delta x_{nsd} = \arg \min \{ \nabla f(x)^\top v \quad | \quad  \| v \|_\infty \leq 1 \} \\
+    \Delta x_{nsd} = - \text{sign}(\nabla f(x))
+\end{gather}
+\begin{equation}
+    \Delta x_{sd} = \| \nabla f(x) \|_1  \Delta x_{nsd}
+\end{equation}
+
+\subsection{Exercise 10.1}
+\textit{Nonsingularity of the KKT matrix}. Consider the KKT matrix
+\begin{align}
+  \begin{bmatrix}
+     P & A^\top \\
+     A & 0
+  \end{bmatrix}
+\end{align}
+where $P \in \mathbb{S}_+^n, A \in \mathbb{R}^{p \times n}, \textbf{rank} A = p < n$
+\subsubsection{Part a}
+Show that each of the following statements is equivalent to nonsingularity of the KKT matrix.
+\begin{itemize}
+    \item $N(P) \cap N(A) = \{ 0 \}$
+    \item $Ax = 0, x \neq 0 \implies x^\top P x > 0$
+    \item $F^\top P F \succ 0$, where $F \in \mathbb{R} ^{n \times (n-p)}$ is a matrix for which $R(F) = N(A)$
+    \item $P + A^\top Q A \succ 0$ for some $Q \succeq 0$
+\end{itemize}
+$N(P) \cap N(A) = \{ 0 \}$
+
+\subsubsection{Part b}
+Show that if the KKT matrix is nonsingular, then it has exactly $n$ postiive and $p$ negative eigenvalues
+
+\subsection{Exercise 11.13} 
+\textit{Self-concordance and negative entropy}.
+\subsubsection{Part a}
+Show that the negative entropy function $x \log x$ (on $\mathbb{R}_{++}$) is not self-concordant. \\
+A function is self-concordant if 
+
+\subsubsection{Part b}
+Show that for any $t > 0$, $tx \log x - \log x $ is self-concordant (on $\mathbb{R}_{++}$)

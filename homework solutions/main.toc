@@ -112,3 +112,9 @@
 \contentsline {subsection}{\numberline {7.3}Additional Exercise HW7.1}{36}{subsection.7.3}%
 \contentsline {section}{\numberline {8}Homework 8}{37}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Exercise 9.8}{37}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Exercise 10.1}{37}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Part a}{37}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Part b}{37}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Exercise 11.13}{37}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Part a}{37}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Part b}{37}{subsubsection.8.3.2}%
