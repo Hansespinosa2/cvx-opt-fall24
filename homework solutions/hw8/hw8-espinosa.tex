@@ -67,3 +67,97 @@ Here, we can see that at $ x= 0,$ the equation $h(x) = \frac{tx+2}{(tx+1)^\frac{
     = - \frac{2+\frac{tx}{2}}{(tx+1)^\frac{5}{2}}
 \end{gather}
 Which is negative for all positive values of $t$ and $x$.
+
+\subsection{Standard Form LP barrier method 1}
+Done in the code notebook with some scrap here
+
+In the following three exercises, you will implement a barrier method for solving the standard
+form LP
+\begin{align}
+  \text{minimize} & \quad c^\top x \\
+  \text{subject to} & \quad Ax = b \\
+  & \quad  x \succeq 0
+\end{align}
+with variable $x \in \mathbb{R}^n, A \in \mathbb{R}^{m \times n}, m < n$. Throughout this exercise we will
+assume that A is full rank, and the sublevel sets $\{x | Ax = b, x \succeq 0, c^\top x \leq \gamma\}$ are all
+bounded. (If this is not the case, the centering problem is unbounded below.)
+\subsubsection{Centering Step}
+Centering step. Implement Newton’s method for solving the centering problem
+\begin{align}
+  \text{minimize} & \quad c^\top x - \sum_{i=1}^n \log x_i \\
+  \text{subject to} & \quad Ax = b
+\end{align}
+with variable $x$, given a strictly feasible starting point $x_0$. \\
+Your code should accept $A,b,c, \text{ and } x_0$, and return $x^*$, the primal optimal point, $\nu^*$, a dual optimal point, and the number of Newton steps executed. \\
+Use the block elimination method to compute the Newton step. (You can also compute
+the Newton step via the KKT system, and compare the result to the Newton step
+computed via block elimination. The two steps should be close, but if any $x_i$
+is very small, you might get a warning about the condition number of the KKT matrix.) \\
+Plot $\lambda^2/2$ versus iteration $k$, for various problem data and initial points, to verify that
+your implementation gives asymptotic quadratic convergence. As stopping criterion,
+you can use $\lambda^2/2 \leq 10^{-6}$. Experiment with varying the algorithm parameters $\alpha$ and $\beta$,
+observing the effect on the total number of Newton steps required, for a fixed problem
+instance. Check that your computed $x^*, \nu^*$
+(nearly) satisfy the KKT conditions. \\
+To generate some random problem data (i.e., $A, b, c, x_0$), we recommend the following
+approach. First, generate $A$ randomly. (You might want to check that it has full rank.)
+Then generate a random positive vector $x_0$, and take $b = Ax_0$. (This ensures that $x_0$
+is strictly feasible.) The parameter $c$ can be chosen randomly. To be sure the sublevel
+sets are bounded, you can add a row to $A$ with all positive elements. If you want to
+be able to repeat a run with the same problem data, be sure to set the state for the
+uniform and normal random number generators.
+Here are some hints that may be useful.
+\begin{itemize}
+    \item We recommend computing $\lambda^2/2$ using the formula $\lambda^2 = - \Delta x_{nt}^\top \nabla f(x)$. You don’t really need $\lambda$ for anything; you can work with $\lambda^2$ instead. (This is important for reasons described below.)
+    \item There can be small numerical errors in the Newton step $\Delta x_{nt}$ that you compute. When $x$ is nearly optimal, the computed value of $\lambda$ can actually be (slightly) negative. If you take the squareroot to get $\lambda$, you’ll get a complex number, and you’ll never recover. Moreover, your line search will never exit. However, this only happens when $x$ is nearly optimal. So if you exit on the condition $\lambda^2/2 \leq 10^{-6}$, everything will be fine, even when the computed value of $\lambda^2$ is negative.
+    \item For the line search, you must first multiply the step size $t$ by $\beta$ until $x + t \Delta x_{nt}$ is feasible (i.e., strictly positive). If you don’t, when you evaluate $f$ you’ll be taking the logarithm of negative numbers, and you’ll never recover.
+\end{itemize}
+
+\subsubsection{Feasible Start LP Solver}
+Using the centering code from part (1),
+implement a barrier method to solve the standard form LP
+\begin{align}
+    \text{minimize} & \quad c^\top x \\
+    \text{subject to} & \quad Ax = b \\
+    & \quad x \succeq 0
+\end{align}
+with variable $x$, given a strictly feasible starting point $x_0$. Your LP solver should
+take as argument $A, b, c,$ and $x_0$, and return $x^*$. \\
+You can terminate your barrier method when the duality gap, as measured by $n/t$,
+is smaller than $10^{-3}$. (If you make the tolerance much smaller, you might run into
+some numerical trouble.) Check your LP solver against the solution found by cvx, for
+several problem instances. \\
+The comments in part (1) on how to generate random data hold here too.
+Experiment with the parameter $\mu$ to see the effect on the number of Newton steps per
+centering step, and the total number of Newton steps required to solve the problem. \\
+Plot the progress of the algorithm, for a problem instance with $n = 500$ and $m = 100$,
+showing duality gap (on a log scale) on the vertical axis, versus the cumulative total
+number of Newton steps (on a linear scale) on the horizontal axis. \\
+Your algorithm should return a $2 \times k$ matrix history, (where k is the total number
+of centering steps), whose first row contains the number of Newton steps required
+for each centering step, and whose second row shows the duality gap at the end of
+each centering step. 
+
+\subsubsection{LP Solver}
+Using the code from part (2), implement a general standard form LP
+solver, that takes arguments $A, b, c$, determines (strict) feasibility, and returns an
+optimal point if the problem is (strictly) feasible. \\
+You will need to implement a phase I method, that determines whether the problem
+is strictly feasible, and if so, finds a strictly feasible point, which can then be fed to
+the code from part (2). In fact, you can use the code from part (2) to implement the
+phase I method. \\
+To find a strictly feasible initial point x0, we solve the phase I problem
+\begin{align}
+  \text{minimize} & \quad t \\
+  \text{subject to} & \quad Ax =b \\
+  & \quad x \succeq (1-t) \textbf{1}, \quad t \geq 0
+\end{align}
+with variables $x$ and $t$. If we can find a feasible $(x, t)$, with $t < 1$, then $x$ is strictly
+feasible for the original problem. The converse is also true, so the original LP is strictly
+feasible if and only if $t^* < 1$, where $t^*$
+is the optimal value of the phase I problem. \\
+We can initialize x and t for the phase I problem with any $x_0$
+satisfying $Ax_0 = b$, and $t^0 = 2 - \min_i x_i^0$.(Here we can assume that $\min x_i^0 \leq 0$; otherwise $x^0$ is already a strictly feasible point, and we are done.)
+You can use a change of variable $z= x + (t - 1) \textbf{1}$ to
+transform the phase I problem into the form in part (2). \\
+Check your LP solver against cvx on several numerical examples, including both feasible and infeasible instances.
