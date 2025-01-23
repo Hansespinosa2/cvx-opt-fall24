@@ -21,7 +21,7 @@ def backtracking_line_search(x, dx, alpha, beta, c):
             break
     return t
 
-def newtons_centering_step(A, x_0, b, c, alpha, beta, epsilon, max_iter):
+def newtons_centering_step(A, x_0, b, c, alpha, beta, epsilon, max_iter, verbose):
     # Storing results
     results = {
         "x": [],
@@ -71,14 +71,15 @@ def newtons_centering_step(A, x_0, b, c, alpha, beta, epsilon, max_iter):
 
     # Newton Complete Certificate
     p_star = x.shape[0] + np.sum(np.log(np.maximum(c + A.T @ w,1e-9))) - w.T @ b
-    print(f"""
-    Newtons Step completed in {i} iterations
-    Duality Gap f(x^*) - p^* = {f(x,c) - p_star}
-    KKT conditions satisfied with accuracy of {np.linalg.norm(g(x,c) + w.T @ A,2)}
-    """)
+    if verbose:
+        print(f"""
+        Newtons Step completed in {i} iterations
+        Duality Gap f(x^*) - p^* = {f(x,c) - p_star}
+        KKT conditions satisfied with accuracy of {np.linalg.norm(g(x,c) + w.T @ A,2)}
+        """)
     return results
 
-def newton_method_fs_lp(A, x_0, b, c, mu=20, alpha=0.1, beta=0.3, epsilon_inner=1e-8, epsilon_outer=1e-4, max_iter=100):
+def newton_method_fs_lp(A, x_0, b, c, mu=20, alpha=0.1, beta=0.3, epsilon_inner=1e-8, epsilon_outer=1e-4, max_iter=100, verbose=False):
     # Results
     results = {
         "x": [],
@@ -101,7 +102,7 @@ def newton_method_fs_lp(A, x_0, b, c, mu=20, alpha=0.1, beta=0.3, epsilon_inner=
 
     while i <= max_iter:
         # Centering step
-        inner_step_results = newtons_centering_step(A, x, b, c * t, alpha, beta, epsilon_inner, max_iter)
+        inner_step_results = newtons_centering_step(A, x, b, c * t, alpha, beta, epsilon_inner, max_iter, verbose)
         x_t = inner_step_results["x"][-1]
 
         # Updating x
@@ -126,3 +127,31 @@ def newton_method_fs_lp(A, x_0, b, c, mu=20, alpha=0.1, beta=0.3, epsilon_inner=
                        )
     
     return results
+
+
+def phase_1_init(A, x_0, b, c,  mu=20, alpha=0.1, beta=0.3, epsilon_inner=1e-8, epsilon_outer=1e-4, max_iter=100, verbose = False):
+    # Problem Restructure
+    n = x_0.shape[0]
+    A_aug = np.c_[A, -A @ np.ones(n)]
+    b_aug = b - A @ np.ones(n)
+    t_0 =  2 - np.min(x_0)
+    c_aug = np.r_[np.zeros(n),1]
+    z = np.r_[x_0, t_0]
+
+    results = newton_method_fs_lp(A_aug, z, b_aug, c_aug, mu, alpha, beta, epsilon_inner, epsilon_outer, max_iter, verbose)
+
+    t_star = results["x"][-1][-1]
+    x_star = results["x"][-1][:-1] - np.ones(n) * t_star + np.ones(n)
+
+    if t_star > 1:
+        print(f"""
+        Problem is infeasible with t_star = {t_star:.2f}
+        """)
+        return None
+    else:
+        print(f"""
+    Problem is strictly feasible with t_star = {t_star:.2f}
+        """)
+
+    return x_star
+
